@@ -36,7 +36,7 @@ module timeQuest_wrapper(clock,SW,LED,enable);
 	assign SW_wire = SW_reg;
 	
 	// creating our test instance
-	b7_4bit_dec_assign_shift (SW_reg,LED_wire,enable);
+	b7_4bit_dec_assign_shift b7_4bit_dec_assign_shift (SW_reg,LED_wire,enable);
   
    // clock needed to determine at which step register was filled with data
 	always @(posedge clock)
@@ -55,7 +55,7 @@ module lab3
     output  [ 9:0]  LEDR
 );
 
-	b7_4bit_dec_assign_shift  (SW,LEDR,KEY[0]);
+	b7_4bit_dec_assign_shift b7_4bit_dec_assign_shift  (SW,LEDR,KEY[0]);
 	// Please comment the line above and uncomment line below to use timeQUest_wrapper
 	//timeQuest_wrapper(KEY[1],SW,LEDR,KEY[0]);
 	

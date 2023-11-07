@@ -64,6 +64,7 @@ module testbench;
          $monitor("enable=%b, binary=%b, binary_out_shift=%b",
             enable, binary, binary_out_shift);
     // do at the beginning of the simulation
+    initial $dumpfile("out.vcd"); //set output waveform file
     initial 
         $dumpvars;  //iverilog dump init
 endmodule
