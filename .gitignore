@@ -1,3 +1,5 @@
 *.vcd
 *obj_dir*
 .DS_Store
+__MACOSX
+
