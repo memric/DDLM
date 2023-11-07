@@ -7,6 +7,7 @@ module testbench;
 
     d_flip_flop d_flip_flop (clk, d, q, q_n);
     
+    initial $dumpfile("out.vcd"); //set output waveform file
     initial $dumpvars;
 
     initial

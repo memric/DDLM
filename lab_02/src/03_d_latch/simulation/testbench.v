@@ -7,6 +7,7 @@ module testbench;
 
     d_latch d_latch (clk, d, q);
     
+    initial $dumpfile("out.vcd"); //set output waveform file
     initial $dumpvars;
 
     initial

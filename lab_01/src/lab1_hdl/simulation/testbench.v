@@ -31,7 +31,10 @@ module testbench;
         $monitor("key=%b led=%b", key, led);
 
     // do at the beginning of the simulation
-    initial 
-        $dumpvars;  //iverilog dump init
+    initial
+        begin
+            $dumpfile("out.vcd"); //set output waveform file
+            $dumpvars;  //iverilog dump init
+        end
 
 endmodule
