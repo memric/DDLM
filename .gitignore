@@ -1,5 +1,11 @@
 *.vcd
 *obj_dir*
+*.v.bak
+*.qdf
+*.rpt
 .DS_Store
+db
+incremental_db
+output_files
 __MACOSX
 
